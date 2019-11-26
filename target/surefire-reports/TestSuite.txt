@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 1, Errors: 0, Skipped: 18, Time elapsed: 1.399 s <<< FAILURE! - in TestSuite
+init(com.moofwd.base.TestBase)  Time elapsed: 1.195 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Connection refused (Connection refused)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Darshans-MBP', ip: 'fe80:0:0:0:cf7:ed3f:3e5c:4718%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '1.8.0_201'
+Driver info: driver.version: AndroidDriver
+	at com.moofwd.base.TestBase.init(TestBase.java:209)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at com.moofwd.base.TestBase.init(TestBase.java:209)
+

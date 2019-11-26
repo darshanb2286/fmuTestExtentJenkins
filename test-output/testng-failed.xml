@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="fmuTestExtent.Avisos">
+        <methods>
+          <include name="click_On_OneOf_Avisos"/>
+          <include name="click_On_Avisos"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- fmuTestExtent.Avisos -->
+      <class name="fmuTestExtent.Finance">
+        <methods>
+          <include name="clickOn_Close_PopUp_Finance"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="clickOn_Paid"/>
+          <include name="clickOn_Download_Receipt"/>
+          <include name="clickOn_Finance"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- fmuTestExtent.Finance -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
