@@ -201,14 +201,21 @@ public AppiumDriver<IOSElement> init() throws MalformedURLException {
 //	File file= new File("/Users/darshanborse/Desktop/workspace/University3/apk/fmu_20_05_2019.apk");
 //	capabilities.setCapability("app",file.getAbsolutePath());	
 	
+// Android Emulator Jenkins Git	
+//	File file= new File("/Users/darshanborse/Desktop/workspace/University3/apk/fmu_20_05_2019.apk");
+//	DesiredCapabilities cap = new DesiredCapabilities();
+//	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "DarshanEmulator");
+//	cap.setCapability("app",file.getAbsolutePath());
+//	AndroidDriver<AndroidElement> driver= new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 	
-	File file= new File("/Users/darshanborse/Desktop/workspace/University3/apk/fmu_20_05_2019.apk");
+//	iOS Simulator jenkins Git
 	DesiredCapabilities cap = new DesiredCapabilities();
-	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "DarshanEmulator");
-	cap.setCapability("app",file.getAbsolutePath());
-	AndroidDriver<AndroidElement> driver= new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-	
-	
+	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
+	cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
+	cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+	File file = new File("/Users/darshanborse/Documents/workspace/com.moofwd.fmuTestngEmail/ipa/BR_Mooestro_FMU.ipa");
+	cap.setCapability("app", file.getAbsolutePath());
+	iosDriver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		
 	
 //	capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "MooFwd");
