@@ -213,9 +213,16 @@ public AppiumDriver<IOSElement> init() throws MalformedURLException {
 	cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
 	cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
 	cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-	File file = new File("/Users/darshanborse/Documents/workspace/com.moofwd.fmuTestngEmail/ipa/BR_Mooestro_FMU.ipa");
+	File file = new File("/Users/darshanborse/Documents/workspace/com.moofwd.fmuTestngEmail/ipa/UPN.ipa");
 	cap.setCapability("app", file.getAbsolutePath());
 	iosDriver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+	
+	
+	
+	
+	
+	
+	///dgsgfshd
 		
 	
 //	capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "MooFwd");
